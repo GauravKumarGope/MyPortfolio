@@ -165,3 +165,75 @@
 .icon:hover {
   transform: translateY(-2px);
 }
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav {
+    width: 100%;
+    padding: 10px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+  }
+
+  /* LEFT */
+
+  .nav-left {
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 54px;
+    height: 54px;
+
+    transform: scale(1.15);
+  }
+
+  .location {
+    gap: 4px;
+
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .location svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+
+  /* CENTER */
+
+  .nav-center {
+    gap: 0;
+    flex-shrink: 0;
+  }
+
+  .design-btn {
+    padding: 10px 14px;
+
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* Hide Contact on mobile */
+  .nav-center a {
+    display: none;
+  }
+
+
+  /* RIGHT */
+
+  .nav-right {
+    display: none;
+  }
+}
