@@ -84,7 +84,7 @@
    RESPONSIVE
 =========================== */
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .goals-section {
     height: auto;
     padding: 48px 6vw 150px;
@@ -107,4 +107,61 @@
   .goals-footnote {
     max-width: 100%;
   }
+}*/
+
+@media (max-width: 768px) {
+
+  .goals-section {
+    height: auto;
+    min-height: 100vh;
+
+    padding: 48px 6vw 160px;
+
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .goals-columns {
+    grid-template-columns: 1fr;
+
+    column-gap: 0;
+    row-gap: 72px;
+
+    margin-top: 58px;
+    margin-bottom: 50px;
+  }
+
+  .goals-col {
+    gap: 14px;
+  }
+
+  .goals-col-num {
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+  }
+
+  .goals-verb {
+    font-size: clamp(3.4rem, 13vw, 5rem);
+
+    line-height: 0.88;
+    letter-spacing: -0.055em;
+
+    white-space: nowrap;
+  }
+
+  .goals-lines {
+    margin-top: 16px;
+  }
+
+  .goals-line {
+    font-size: 1.45rem;
+    line-height: 1.45;
+  }
+
+  .goals-footnote {
+    max-width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
 }
