@@ -1,0 +1,64 @@
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+.skills-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 6vw;
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Headline */
+.skills-headline {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 6.2rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+  color: #111;
+  margin-bottom: 56px;
+  margin-top: 32px;
+}
+
+/* Clusters layout */
+.skills-clusters {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.skills-cluster {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: baseline;
+  gap: 32px;
+}
+
+.skills-cluster-name {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.skills-cluster-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+.skills-item {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #111;
+  white-space: nowrap;
+}

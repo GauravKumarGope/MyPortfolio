@@ -274,6 +274,35 @@ export default function Hero() {
       ref={heroRef}
     >
 
+      {/* BACKGROUND EDITORIAL LAYER */}
+      <div className="hero-bg-layer" aria-hidden="true">
+        {/* Oversized background numbers */}
+        <div className="hero-bg-number">00</div>
+        <div className="hero-bg-word">INDEX</div>
+
+        {/* Vertical guide lines */}
+        <div className="hero-grid-line hero-grid-line-left" />
+        <div className="hero-grid-line hero-grid-line-center" />
+        <div className="hero-grid-line hero-grid-line-right" />
+
+        {/* Horizontal rules */}
+        <div className="hero-rule hero-rule-top" />
+        <div className="hero-rule hero-rule-mid" />
+        <div className="hero-rule hero-rule-bottom" />
+
+        {/* Technical / Editorial labels */}
+        <span className="hero-label-top-left">00 / INDEX</span>
+        <span className="hero-label-top-right">12.2958° N, 76.6394° E</span>
+        <span className="hero-label-mid-left">FIG. 0.0 — SELECTED WORKS</span>
+        <span className="hero-label-bottom-right">SCROLL TO EXPLORE ↓</span>
+
+        {/* Crosshair marks */}
+        <span className="hero-mark mark-tl">+</span>
+        <span className="hero-mark mark-tr">+</span>
+        <span className="hero-mark mark-bl">+</span>
+        <span className="hero-mark mark-br">+</span>
+      </div>
+
       {/* TITLE */}
 
       <div className="hero-title">

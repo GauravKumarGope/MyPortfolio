@@ -1,18 +1,18 @@
-import { useState } from 'react'
 import './App.css';
-import Intro from './components/intro/Intro.jsx'
-import Hero from './components/hero/Hero.jsx'
-import Nav from './components/nav/Nav.jsx'
+import Nav from './components/nav/Nav.jsx';
+import Hero from './components/hero/Hero.jsx';
+import MyJourney from './components/myjourney/MyJourney.jsx';
+import ContactPage from './components/contact/ContactPage.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Nav/>
-    <Hero />
+      <Nav />
+      <Hero />
+      <MyJourney />
+      <ContactPage />
     </>
-  )
+  );
 }
 
 export default App;

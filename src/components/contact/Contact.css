@@ -1,0 +1,345 @@
+.contact {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+  background: #f5f2ec;
+  color: #181818;
+
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.contact-brand {
+  position: absolute;
+
+  top: 7%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  text-align: center;
+  z-index: 5;
+}
+
+.contact-brand img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+
+  display: block;
+  margin: 0 auto 16px;
+}
+
+.contact-brand h2 {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  letter-spacing: 0.28em;
+  white-space: nowrap;
+}
+
+.contact-brand p {
+  margin: 10px 0 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.contact-heading {
+  position: absolute;
+
+  left: 50%;
+  top: 32%;
+
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  z-index: 4;
+}
+
+.contact-heading h1 {
+  margin: 0;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  font-size: clamp(52px, 6vw, 92px);
+  line-height: 0.9;
+
+  letter-spacing: -0.03em;
+}
+
+.contact-heading p {
+  margin-top: 28px;
+
+  font-family: monospace;
+
+  font-size: 14px;
+  line-height: 1.8;
+
+  color: #777;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.contact-cards {
+  position: absolute;
+  inset: 0;
+
+  z-index: 3;
+}
+
+.contact-card {
+  position: absolute;
+
+  width: 190px;
+  min-height: 250px;
+
+  padding: 24px 22px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(20, 20, 20, 0.55);
+  border-radius: 10px;
+
+  background: rgba(250, 248, 244, 0.82);
+
+  color: #181818;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) rotate(0deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Card positions */
+
+.card-1 {
+  left: 20%;
+  top: 28%;
+  transform: rotate(-7deg);
+}
+
+.card-2 {
+  right: 20%;
+  top: 25%;
+  transform: rotate(7deg);
+}
+
+.card-3 {
+  left: 23%;
+  bottom: 19%;
+  transform: rotate(5deg);
+}
+
+.card-4 {
+  right: 23%;
+  bottom: 19%;
+  transform: rotate(-4deg);
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  background: #fafafa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  overflow: hidden;
+}
+
+.card-icon img {
+  width: 42px;
+  height: 42px;
+
+  object-fit: contain;
+}
+
+.contact-card h3 {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 17px;
+  letter-spacing: 0.12em;
+}
+
+.contact-card p {
+  margin: 18px 0 0;
+
+  font-family: monospace;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  word-break: break-word;
+}
+
+.card-arrow {
+  margin-top: auto;
+
+  font-size: 24px;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.contact-avatar {
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  width: min(380px, 32vw);
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+.contact-avatar img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.contact-bottom {
+  position: absolute;
+
+  left: 50%;
+  bottom: 3%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 6;
+}
+
+.contact-bottom span {
+  font-family: monospace;
+
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+.contact-bottom div {
+  width: 30px;
+  height: 1px;
+
+  background: #222;
+
+  margin-top: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .contact {
+    min-height: 900px;
+  }
+
+  .contact-card {
+    width: 150px;
+    min-height: 210px;
+
+    padding: 18px;
+  }
+
+  .contact-brand h2 {
+    font-size: 12px;
+  }
+
+  .contact-heading {
+    top: 34%;
+  }
+
+  .contact-heading h1 {
+    font-size: 52px;
+  }
+
+  .contact-heading p {
+    font-size: 11px;
+  }
+
+  .contact-avatar {
+    width: 330px;
+  }
+
+  .card-1 {
+    left: 3%;
+  }
+
+  .card-2 {
+    right: 3%;
+  }
+
+  .card-3 {
+    left: 5%;
+  }
+
+  .card-4 {
+    right: 5%;
+  }
+}
