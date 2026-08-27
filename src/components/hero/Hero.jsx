@@ -95,64 +95,123 @@ export default function Hero() {
         are entering/leaving.
       */
 
-      const positions = [
+     const isMobile = window.innerWidth <= 768;
 
-        // LEFT OUT
-        {
-          x: -900,
-          y: 70,
-          scale: 0.65,
-          opacity: 0,
-          rotation: -10
-        },
+const positions = isMobile
+  ? [
 
-        // LEFT
-        {
-          x: -480,
-          y: 30,
-          scale: 0.82,
-          opacity: 0.45,
-          rotation: -6
-        },
+      // LEFT OUT
+      {
+        x: -330,
+        y: 50,
+        scale: 0.55,
+        opacity: 0,
+        rotation: -10
+      },
 
-        // CENTER LEFT
-        {
-          x: -160,
-          y: 0,
-          scale: 0.95,
-          opacity: 0.65,
-          rotation: -2
-        },
+      // LEFT
+      {
+        x: -145,
+        y: 25,
+        scale: 0.72,
+        opacity: 0.45,
+        rotation: -6
+      },
 
-        // CENTER RIGHT
-        {
-          x: 160,
-          y: 0,
-          scale: 0.95,
-          opacity: 0.65,
-          rotation: 2
-        },
+      // CENTER LEFT
+      {
+        x: -65,
+        y: 0,
+        scale: 0.82,
+        opacity: 0.65,
+        rotation: -2
+      },
 
-        // RIGHT
-        {
-          x: 480,
-          y: 30,
-          scale: 0.82,
-          opacity: 0.45,
-          rotation: 6
-        },
+      // CENTER RIGHT
+      {
+        x: 65,
+        y: 0,
+        scale: 0.82,
+        opacity: 0.65,
+        rotation: 2
+      },
 
-        // RIGHT OUT
-        {
-          x: 900,
-          y: 70,
-          scale: 0.65,
-          opacity: 0,
-          rotation: 10
-        }
+      // RIGHT
+      {
+        x: 145,
+        y: 25,
+        scale: 0.72,
+        opacity: 0.45,
+        rotation: 6
+      },
 
-      ];
+      // RIGHT OUT
+      {
+        x: 330,
+        y: 50,
+        scale: 0.55,
+        opacity: 0,
+        rotation: 10
+      }
 
+    ]
+  : [
+
+      // LEFT OUT
+      {
+        x: -900,
+        y: 70,
+        scale: 0.65,
+        opacity: 0,
+        rotation: -10
+      },
+
+      // LEFT
+      {
+        x: -480,
+        y: 30,
+        scale: 0.82,
+        opacity: 0.45,
+        rotation: -6
+      },
+
+      // CENTER LEFT
+      {
+        x: -160,
+        y: 0,
+        scale: 0.95,
+        opacity: 0.65,
+        rotation: -2
+      },
+
+      // CENTER RIGHT
+      {
+        x: 160,
+        y: 0,
+        scale: 0.95,
+        opacity: 0.65,
+        rotation: 2
+      },
+
+      // RIGHT
+      {
+        x: 480,
+        y: 30,
+        scale: 0.82,
+        opacity: 0.45,
+        rotation: 6
+      },
+
+      // RIGHT OUT
+      {
+        x: 900,
+        y: 70,
+        scale: 0.65,
+        opacity: 0,
+        rotation: 10
+      }
+
+    ];
 
       /* =========================
          INITIAL POSITIONS
@@ -280,27 +339,7 @@ export default function Hero() {
         <div className="hero-bg-number">00</div>
         <div className="hero-bg-word">INDEX</div>
 
-        {/* Vertical guide lines 
-        <div className="hero-grid-line hero-grid-line-left" />
-        <div className="hero-grid-line hero-grid-line-center" />
-        <div className="hero-grid-line hero-grid-line-right" /> */}
-
-        {/* Horizontal rules 
-        <div className="hero-rule hero-rule-top" />
-        <div className="hero-rule hero-rule-mid" />
-        <div className="hero-rule hero-rule-bottom" /> */}
-
-        {/* Technical / Editorial labels */}
-        {/*<span className="hero-label-top-left">00 / INDEX</span>
-        <span className="hero-label-top-right">12.2958° N, 76.6394° E</span>
-        <span className="hero-label-mid-left">FIG. 0.0 — SELECTED WORKS</span>*/}
         <span className="hero-label-bottom-right">SCROLL TO EXPLORE ↓</span>
-
-        {/* Crosshair marks 
-        <span className="hero-mark mark-tl">+</span>
-        <span className="hero-mark mark-tr">+</span>
-        <span className="hero-mark mark-bl">+</span>
-        <span className="hero-mark mark-br">+</span> */}
       </div>
 
       {/* TITLE */}

@@ -5,7 +5,7 @@ const skillGroups = [
   },
   {
     cluster: "FRONTEND",
-    skills: ["REACT", "HTML5", "CSS3", "D3.JS", "RESPONSIVE DESIGN"],
+    skills: ["REACT", "HTML5", "CSS3", "D3.JS", "RESPONSIVE DESIGN" , "GSAP"],
   },
   {
     cluster: "BACKEND & DATA",

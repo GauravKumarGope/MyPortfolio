@@ -6,10 +6,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 60px 6vw;
+  justify-content: flex-start;
+
+  padding: 18vh 6vw 120px;
+
   height: 100%;
   box-sizing: border-box;
+
   border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 

@@ -388,3 +388,94 @@
   right: 10%;
 
 }
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .HeroSection {
+    height: calc(100vh - 80px);
+    min-height: 620px;
+  }
+
+  /* ---------- TITLE ---------- */
+
+  .hero-title {
+    top: 45px;
+    width: 94%;
+  }
+
+  .hero-title-text {
+    font-size: clamp(38px, 10vw, 58px);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    white-space: nowrap;
+  }
+
+
+  /* ---------- PROJECT CAROUSEL ---------- */
+
+  .project-carousel {
+    top: 125px;
+    height: 48vh;
+  }
+
+  .project-card {
+    width: 145px;
+    height: 190px;
+    border-radius: 12px;
+  }
+
+
+  /* ---------- CHARACTER ---------- */
+
+  #me {
+    bottom: 35px;
+  }
+
+  #me img {
+    height: 55vh;
+    max-height: 480px;
+  }
+
+
+  /* ---------- BOTTOM META ---------- */
+
+  .hero-meta {
+    bottom: 20px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-meta-left {
+    left: 7%;
+  }
+
+  .hero-meta-right {
+    right: 7%;
+  }
+
+
+  /* ---------- BACKGROUND TYPOGRAPHY ---------- */
+
+  .hero-bg-number {
+    top: 20px;
+    left: -10px;
+    font-size: 38vw;
+  }
+
+  .hero-bg-word {
+    bottom: 60px;
+    right: -10px;
+    font-size: 24vw;
+  }
+
+  .hero-label-bottom-right {
+    bottom: 75px;
+    right: 7%;
+    font-size: 0.5rem;
+  }
+
+}
