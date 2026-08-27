@@ -115,7 +115,7 @@
     height: auto;
     min-height: 100vh;
 
-    padding: 48px 6vw 130px;
+    padding: 4px 6vw 130px;
 
     border-left: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -127,7 +127,7 @@
     column-gap: 0;
 
     /* This is the important part */
-    row-gap: 48px;
+    row-gap: 15px;
 
     margin-top: 48px;
     margin-bottom: 40px;
