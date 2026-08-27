@@ -65,3 +65,76 @@
   color: #111;
   white-space: nowrap;
 }
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+  .skills-section {
+    height: auto;
+    min-height: 100vh;
+
+    padding: 48px 6vw 150px;
+
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* ---------- HEADLINE ---------- */
+
+  .skills-headline {
+    font-size: clamp(2.8rem, 10vw, 4rem);
+    line-height: 0.9;
+
+    margin-top: 28px;
+    margin-bottom: 50px;
+
+    white-space: nowrap;
+  }
+
+
+  /* ---------- CLUSTERS ---------- */
+
+  .skills-clusters {
+    gap: 46px;
+  }
+
+  .skills-cluster {
+    grid-template-columns: 105px minmax(0, 1fr);
+    gap: 18px;
+
+    align-items: start;
+  }
+
+
+  /* ---------- LABEL ---------- */
+
+  .skills-cluster-name {
+    font-size: 0.75rem;
+    line-height: 1.4;
+
+    letter-spacing: 0.12em;
+  }
+
+
+  /* ---------- SKILLS ---------- */
+
+  .skills-cluster-items {
+    min-width: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px 18px;
+  }
+
+  .skills-item {
+    font-size: 1.15rem;
+    line-height: 1.15;
+
+    white-space: normal;
+  }
+
+}
