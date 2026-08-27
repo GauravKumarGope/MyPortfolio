@@ -445,16 +445,20 @@
 
   .hero-meta {
     bottom: 20px;
-    font-size: 12px;
+    width: 44%;
+    font-size: 10px;
     letter-spacing: 0.03em;
+    white-space: nowrap;
   }
 
   .hero-meta-left {
     left: 7%;
+    text-align: left;
   }
 
   .hero-meta-right {
     right: 7%;
+    text-align: right;
   }
 
 
