@@ -1,6 +1,6 @@
 import gmailIcon from "../../assets/gmail.png";
 import linkedinIcon from "../../assets/linkedin.png";
-import instagramIcon from "../../assets/instagram.png";
+import gitHubIcon from "../../assets/gitIcon.webp";
 import resumeIcon from "../../assets/resume.png";
 
 const contactItems = [
@@ -21,11 +21,11 @@ const contactItems = [
     position: "card-right-top",
   },
   {
-    id: "instagram",
-    title: "INSTAGRAM",
-    info: "@gauravgope_",
-    icon: instagramIcon,
-    href: "https://www.instagram.com/gatling_god/",
+    id: "GitHub",
+    title: "GITHUB",
+    info: "github.com/GauravKumarGope",
+    icon: gitHubIcon,
+    href: "https://github.com/GauravKumarGope",
     position: "card-left-bottom",
   },
   {
