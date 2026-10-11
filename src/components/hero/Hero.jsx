@@ -1,11 +1,11 @@
-import heroImg from '../../assets/hero.png';
+import heroImg from '../../assets/hero.webp';
 
-import design1 from '../../assets/design1.2.png';
-import design2 from '../../assets/design1.png';
-import design3 from '../../assets/design2.2.jpeg';
-import design4 from '../../assets/design2.jpeg';
-import design5 from '../../assets/design3.png';
-import design6 from '../../assets/design4.png';
+import design1 from '../../assets/design1.2.webp';
+import design2 from '../../assets/design1.webp';
+import design3 from '../../assets/design2.2.webp';
+import design4 from '../../assets/design2.webp';
+import design5 from '../../assets/design3.webp';
+import design6 from '../../assets/design4.webp';
 
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";

@@ -2,7 +2,7 @@ import "./Contact.css";
 import contactItems from "./Contact.js";
 
 import logo from "../../assets/Logo.png";
-import avatar from "../../assets/avatar.png";
+import avatar from "../../assets/avatar.webp";
 
 function Contact() {
   return (
