@@ -33,7 +33,7 @@ const contactItems = [
     title: "RESUME",
     info: "View my resume",
     icon: resumeIcon,
-    href: "/Gaurav_Gope_Resume.pdf",
+    href: "/GauravKumarResume.pdf",
     position: "card-right-bottom",
   },
 ];
